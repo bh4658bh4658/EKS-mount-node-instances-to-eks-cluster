@@ -161,7 +161,7 @@ set -o xtrace
 
 #### 驗證RBAC
 
-* 若要授予創建叢集的 IAM 使用者或角色以外的 IAM 使用者或角色與叢集互動的能力，您必須在 Kubernetes 中編輯 aws-auth ConfigMap，向 Kubernetes RBAC 要求權限。
+* 若要授予 Kubernetes 與叢集內的 IAM 使用者或角色互動的能力，您必須在 Kubernetes 中編輯 aws-auth ConfigMap，使 Kubernetes RBAC 獲得存取權限。
 
 ```
 $ curl -O https://amazon-eks.s3-us-west-2.amazonaws.com/cloudformation/2019-02-11/aws-auth-cm.yaml
