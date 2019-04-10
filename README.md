@@ -174,7 +174,7 @@ set -o xtrace
 
 #### Verify RBAC
 
-* To grant IAM users or roles other than the one you created your cluster the ability to interact with the cluster, you must edit the aws-auth ConfigMap to request permission from Kubernetes RBAC.
+* To let Kubernetes RBAC have permission to access your node workers, you must edit the aws-auth ConfigMapKubernetes RBAC.
 
 ```
 $ curl -O https://amazon-eks.s3-us-west-2.amazonaws.com/cloudformation/2019-02-11/aws-auth-cm.yaml
